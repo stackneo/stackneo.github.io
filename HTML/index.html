@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dan Portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <script src="../JS/particles/particles.js"></script>
+  <script src="../JS/main.js"></script>
+  <div id="particles-js"></div>
+  <div id="welcome-section">
+    <h1>Hi, I'm Dan. 👋</h1>
+    <h2>I'm a Student Software Engineer</h2>
+    <p>Second year computer science student at the University of Leicester</p>
+    <p>When I'm not working on projects, you can catch me running, reading, or attempting to build a LEGO set.</p>
+  </div>
+  <script src="../JS/particles/app.js"></script>
+</head>
+<body>
+<main>
+  <nav id="navbar">
+    <div class="nav-links">
+      <a class="nav-link" href="#welcome-section">About Me</a>
+      <a class="nav-link remove" href="#skills-section">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#contact-me">Contact Me</a>
+    </div>
+  </nav>
+  <div id="skills-section"></div>
+  <h2 class="intro-header">Skills:</h2>
+  <div id="skills">
+    <div class="category">
+      <h3>Frontend</h3>
+      <ul>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3"></i> CSS</li>
+        <li><i class="fab fa-js"></i> JavaScript</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h3>Backend</h3>
+      <ul>
+        <li><i class="fab fa-java"></i> Java (+ Spring Web)</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+        <li><i class="fab fa-python"></i> Python</li>
+      </ul>
+    </div>
+    <div class="category">
+      <h3>Tools</h3>
+      <ul>
+        <li><i class="fab fa-github"></i> Git/Github</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="projects">
+    <h2 class="intro-header">Projects:</h2>
+    <div class="project-tiles">
+      <div class="project-tile">
+        <h3>Portfolio Site V1</h3>
+        <p>The website you're on now!</p>
+        <p class="tags"><i class="fab fa-html5"></i><i class="fab fa-css3"></i><i class="fab fa-js"></i></p>
+        <a href="https://github.com/stackneo/pySorter" class="github-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="project-tile">
+        <h3>pySorter</h3>
+        <p>A visualizer for basic sorting algorithms.</p>
+        <p class="tags"><i class="fab fa-python"></i></p>
+        <a href="https://github.com/stackneo/pySorter" class="github-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <video controls class="video-tile">
+          <source src="../Media/pySorter.webm" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-tile">
+        <h3>deltafin</h3>
+        <p>A Jellyfin CLI client.</p>
+        <p class="tags"><i class="fab fa-python"></i></p>
+        <a href="https://github.com/stackneo/deltafin" class="github-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="project-tile">
+        <h3>Win95KeyGen</h3>
+        <p>A Windows 95 key generator/validator.</p>
+        <p class="tags"><i class="fab fa-java"></i></p>
+        <a href="https://github.com/stackneo/Win95KeyGen" class="github-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <video controls class="video-tile">
+          <source src="../Media/Win95KeyGen.webm" type="video/mp4">
+        </video>
+      </div>
+      <div class="project-tile">
+        <h3>Lecture Bot</h3>
+        <p>A discord bot that assists students in revision.</p>
+        <p class="tags"><i class="fab fa-python"></i></p>
+        <a href="https://github.com/stackneo/Reza-Bot" class="github-link" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="contact-me">
+    <h2 class="intro-header">Contact Me:</h2>
+    <form id="query-form">
+      <label id="email-label"> Email: danburrows2004@gmail.com
+      </label>
+      <div class="icon-links">
+        <a class="profile-link" target="_blank" href="https://www.linkedin.com/in/dan-comp-sci">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="profile-link" target="_blank" href="https://github.com/stackneo"><i class="fab fa-github"></i></a>
+      </div>
+    </form>
+  </div>
+</main>
+<footer>
+  <p>Built with JavaScript (particle.js), CSS3, and HTML5, deployed with GitHub Pages.</p>
+</footer>
+</body>
+</html>
