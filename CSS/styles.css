@@ -94,25 +94,24 @@ body {
 
 
 .project-tiles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-
 
 .project-tile {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 15px;
   font-family: "Raleway", sans-serif;
-  width: 400px;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 5px;
-  justify-content: center;
+  width: 100%;
+  max-width: 400px;
   transition: transform 0.3s ease-in-out;
+  text-align: center;
 }
 
 
@@ -124,6 +123,7 @@ body {
 
 .project-tile p {
   margin: 5px 0;
+  text-align: center;
 }
 
 .project-tile .tags {
@@ -141,7 +141,8 @@ body {
   text-decoration: none;
   color: white;
   justify-content: center;
-  display: flex;
+  margin-top: 10px;
+  padding: 5px;
 }
 
 footer {
@@ -161,15 +162,15 @@ form {
 
 .video-tile {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px;
   height: 300px;
   width: 300px;
   border: none;
 }
 
-
-#submit {
-  
-}
 
 #particles-js {
   position: absolute;
@@ -185,5 +186,18 @@ form {
 @media (max-width: 490px) {
   .remove {
     display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-tiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Stack vertically on smaller screens */
+@media (max-width: 768px) {
+  .project-tiles {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
